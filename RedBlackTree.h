@@ -42,6 +42,8 @@ class RedBlackTree {
 	
 	private: 
 		unsigned long long int numItems  = 0;
+		// adding a helper function;
+		RBTNode* CopyTree(const RBTNode* locate, RBTNode* parent);
 		RBTNode *root = nullptr;
 		
 		static string ToInfixString(const RBTNode *n);
